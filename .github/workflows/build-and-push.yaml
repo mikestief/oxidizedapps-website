@@ -10,8 +10,8 @@ env:
   PROJECT_NUMBER: 181584542508
   AR_REPO_NAME: rmm-docker-images
   AR_REGION: us-central1
-  IMAGE_NAME: oxidizedapps-website
-  CLOUD_RUN_SERVICE_NAME: oxidizedapps-website-service
+  IMAGE_NAME: oxidized-apps-website
+  CLOUD_RUN_SERVICE_NAME: oxidized-apps-website
   CLOUD_RUN_REGION: us-central1
 
 jobs:
