@@ -378,6 +378,24 @@ body {
   text-align: center;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--copper-light);
+}
+
 .footer-inner p {
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -541,9 +559,19 @@ body {
 
 .legal-card {
   background: rgba(255, 255, 255, 0.02);
-  padding: 2rem;
-  border-radius: 16px;
+  padding: 2.5rem;
+  border-radius: 20px;
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .legal-card h3 {
@@ -562,12 +590,12 @@ body {
   color: var(--copper-light);
   text-decoration: none;
   font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .text-link:hover {
-  border-color: var(--copper-light);
+  opacity: 0.85;
+  color: var(--copper);
 }
 
 @media (max-width: 800px) {
@@ -627,4 +655,29 @@ body {
   .product-card {
     padding: 1.5rem;
   }
+}
+
+/* === Legal Pages === */
+.legal-page .section {
+  padding-top: calc(var(--section-pad-y) + 64px);
+}
+
+.legal-content-card {
+  background: var(--bg-card);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  margin-top: 2rem;
+  min-height: 600px;
+}
+
+/* Termageddon Embed Overrides */
+.policy_embed_div {
+  background: transparent !important;
+  color: var(--text-primary) !important;
+  width: 100% !important;
+}
+
+.policy_embed_div a {
+  color: var(--copper-light) !important;
 }
