@@ -9,6 +9,9 @@ export default defineConfig({
       input: {
         main: './index.html',
         rmm: './rmm-info.html',
+        privacy: './privacy-policy.html',
+        terms: './terms-of-service.html',
+        eula: './eula.html',
       },
     },
   },
